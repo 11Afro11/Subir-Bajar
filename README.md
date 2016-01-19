@@ -7,7 +7,7 @@ carpeta del sistema con permisos de ejecucion y luego agregar las siguientes lin
 ```
 function subir()
 {
-    /home/...../subir.sh $1
+    /home/...../subir.sh "$1"
 }
 ```
 una vez hecho esto guardamos y abrimos una terminal en una carpeta en la que tengamos un proyecto de github.
