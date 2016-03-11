@@ -7,12 +7,20 @@ carpeta del sistema con permisos de ejecucion y luego agregar las siguientes lin
 ```
 function subir()
 {
-    /home/...../subir.sh "$1"
+    function subir()
+{
+	if test $# -lt 1
+	then
+	/home/afro/Script/subir.sh "YOU SHALL NOT PUSH"
+	else
+	/home/afro/Script/subir.sh "$1"
+	fi
+}
 }
 ```
 una vez hecho esto guardamos y abrimos una terminal en una carpeta en la que tengamos un proyecto de github.
 y para subir los cambios a github solo hay que escribir subir. si quieremos ponerle un commit se lo pasamos como 
-parametro (sin espacios claro).
+parametro ("entre comillas").
 
 ya si queremos mas concordancia para las funciones de "subir" y "bajar" podemos agregar tambien esta linea en nuestro fichero de __.bashrc__:
 
